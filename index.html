@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio Homepage</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="index.html">Home</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div>
+            <img class="brand" src="images/portfolio-logo.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-wrapper">
+        <div class="row">
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio0.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <a
+                style="text-decoration: none;"
+                target="_blank"
+                href="https://www.mktd.org/"
+                ><div class="subtitle">WEBSITE DESIGN</div></a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio1.jpg);"
+            ></div>
+
+            <div class="img-text-wrapper">
+              <div class="subtitle">INFOGRAPHICS</div>
+            </div>
+          </div>
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio2.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">POLITICAL POSTER</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio3.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">BOOK COVER</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio5.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">LABEL DESIGN</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio6.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">LOGO DESIGN & STATIONERY</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio7.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">THEATER AD</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio8.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">TYPOGRAPHY</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio9.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">MAGAZINE SPREAD</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio11.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">CALENDAR OF EVENTS</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio13.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">TRAVEL BROCHURE</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio12.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">TOY DESIGN</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio14.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">TOY DESIGN</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio15.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">TOY DESIGN</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div
+              class="portfolio-img-background"
+              style="background-image: url(images/portfolio16.jpg);"
+            ></div>
+            <div class="img-text-wrapper">
+              <div class="subtitle">TOY DESIGN</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const portfolioItems = document.querySelectorAll(".portfolio-item-wrapper");
+
+    portfolioItems.forEach((portfolioItem) => {
+      portfolioItem.addEventListener("mouseover", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.add("image-blur");
+      });
+
+      portfolioItem.addEventListener("mouseout", () => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.remove("image-blur");
+      });
+    });
+  </script>
+</html>
