@@ -1,2 +1,2 @@
 # ezgi-portfolio
-Created by Ezgi Elouzeh
+Created by Ezgi Elouzeh for private use.
